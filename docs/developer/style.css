@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    background-color: #ebebeb;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-stripes-light.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    color: #1d0000;
+    margin: 10px; padding: 10px
+}
+
+
+h1{
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+  }
+  
+  h1:before, h1:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+  }
+  
+  h1:before {left:0;}
+  h1:after {right: 0;}
+
+  h2 {
+    position: relative;
+    padding-bottom: .5em;
+    border-bottom: 4px solid #ccc;
+  }
+  h2::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    z-index: 2;
+    content: '';
+    width: 20%;
+    height: 4px;
+    background-color: #3498db;
+  }
+
+ul, ol {
+    background: #ffffff;
+    border-radius: 9px;
+    margin-left: 10px;/*はみ出ないように調整*/
+    margin-right: 10px;/*はみ出ないように調整*/
+    padding: 0.5em 0.5em 0.5em 2em;
+  }
+  
+  ul li, ol li {
+    line-height: 1.5;
+    padding: 0.2em 0;
+  }
